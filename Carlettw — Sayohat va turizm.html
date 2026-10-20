@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Carlettw — Sayohat va turizm</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f8f8;--surface:#ffffff;--ink:#10303a;--muted:#4d6a72;--accent:#0e8f93;--sun:#f2a516;--hero:#0b5560;--line:#cfe1e3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1b20;--surface:#12292f;--ink:#e7f3f4;--muted:#9bb7bc;--accent:#37c4c8;--sun:#f5b73a;--hero:#0b3f48;--line:#21424a}}
+:root[data-theme="dark"]{--bg:#0a1b20;--surface:#12292f;--ink:#e7f3f4;--muted:#9bb7bc;--accent:#37c4c8;--sun:#f5b73a;--hero:#0b3f48;--line:#21424a}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,sans-serif;line-height:1.6}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-family:Unbounded,sans-serif;font-weight:700;font-size:1.25rem;text-decoration:none}
+.logo span{color:var(--sun)}
+nav a{margin-left:18px;text-decoration:none;font-weight:600;color:var(--muted)}
+nav a:hover,nav a:focus-visible{color:var(--accent)}
+.hero{background:var(--hero);color:#f1fbfb;border-radius:0 0 36px 36px;padding:56px 0 72px;position:relative;overflow:hidden}
+.hero header .logo,.hero nav a{color:#f1fbfb}
+.hero h1{font-family:Unbounded,sans-serif;font-weight:700;font-size:clamp(2rem,6vw,3.6rem);line-height:1.1;margin:48px 0 16px;max-width:15ch}
+.hero p{max-width:46ch;font-size:1.1rem;color:#cde8ea;margin:0 0 28px}
+.btn{display:inline-block;background:var(--sun);color:#2a1d00;font-weight:700;padding:14px 26px;border-radius:999px;text-decoration:none}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.dome{position:absolute;right:-40px;bottom:-60px;width:320px;height:320px;border-radius:50% 50% 0 0;background:radial-gradient(circle at 50% 30%,#1fb5b9,#0e8f93 60%,#0a6f74);opacity:.9}
+.dome::after{content:"";position:absolute;left:50%;top:-34px;width:6px;height:40px;background:var(--sun);transform:translateX(-50%);border-radius:3px}
+section{padding:56px 0 8px}
+h2{font-family:Unbounded,sans-serif;font-size:clamp(1.4rem,3.5vw,2rem);margin:0 0 8px}
+.lead{color:var(--muted);margin:0 0 28px;max-width:52ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px}
+.card:nth-child(even){border-radius:18px 18px 18px 4px}
+.card h3{margin:0 0 6px;font-size:1.15rem}
+.card p{margin:0 0 14px;color:var(--muted);font-size:.95rem}
+.price{font-weight:700;color:var(--accent)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:8px}
+.facts div{border-left:4px solid var(--sun);padding-left:14px}
+.facts b{display:block}
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:32px;margin:56px 0 40px;text-align:center}
+footer{text-align:center;color:var(--muted);padding:0 20px 32px;font-size:.9rem}
+@media(max-width:560px){nav a{margin-left:12px}.dome{width:220px;height:220px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="wrap">
+    <header>
+      <a class="logo" href="#">Carlett<span>w</span></a>
+      <nav><a href="#yonalishlar">Yo‘nalishlar</a><a href="#nega">Nega biz</a><a href="#aloqa">Aloqa</a></nav>
+    </header>
+    <h1>O‘zbekistonni birga kashf eting</h1>
+    <p>Carlettw — Samarqand, Buxoro, Xiva va Toshkent bo‘ylab qulay, xavfsiz va esda qoladigan sayohatlar tashkil qiladi.</p>
+    <a class="btn" href="#aloqa">Sayohatga buyurtma berish</a>
+  </div>
+  <div class="dome" aria-hidden="true"></div>
+</div>
+
+<main class="wrap">
+  <section id="yonalishlar">
+    <h2>Mashhur yo‘nalishlar</h2>
+    <p class="lead">Har bir tur gid, transport va mehmonxonani o‘z ichiga oladi.</p>
+    <div class="grid">
+      <article class="card"><h3>Samarqand</h3><p>Registon maydoni, Go‘ri Amir maqbarasi va Shohi Zinda ansambli.</p><span class="price">3 kun · $180 dan</span></article>
+      <article class="card"><h3>Buxoro</h3><p>Qadimiy savdo gumbazlari, Ark qal’asi va Poyi Kalon majmuasi.</p><span class="price">2 kun · $130 dan</span></article>
+      <article class="card"><h3>Xiva</h3><p>Ichan Qal’a — ochiq osmon ostidagi shahar-muzey.</p><span class="price">2 kun · $140 dan</span></article>
+      <article class="card"><h3>Toshkent</h3><p>Eski shahar, Chorsu bozori va zamonaviy metro bekatlari.</p><span class="price">1 kun · $60 dan</span></article>
+    </div>
+  </section>
+
+  <section id="nega">
+    <h2>Nega Carlettw?</h2>
+    <div class="facts">
+      <div><b>Mahalliy gidlar</b>Shaharni yaxshi biladigan, ko‘p tilli mutaxassislar.</div>
+      <div><b>Aniq narx</b>Yashirin to‘lovlarsiz, oldindan kelishilgan narx.</div>
+      <div><b>Moslashuvchan reja</b>Marshrutni vaqtingiz va qiziqishingizga qarab o‘zgartiramiz.</div>
+    </div>
+  </section>
+
+  <section id="aloqa" class="contact">
+    <h2>Sayohatni rejalashtiramiz</h2>
+    <p class="lead" style="margin-inline:auto">Yo‘nalish va sanani yozing — biz bir kun ichida javob beramiz.</p>
+    <a class="btn" href="mailto:info@carlettw.example">Xat yozish</a>
+  </section>
+</main>
+<footer>© 2026 Carlettw. Barcha huquqlar himoyalangan.</footer>
+</body>
+</html>
